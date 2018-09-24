@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_9;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_9;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_PLAYFABADMIN_API;ENABLE_PLAYFABSERVER_API</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -61,7 +61,132 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Admin\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Admin\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\Authentication\PlayFabAuthenticationAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Authentication\PlayFabAuthenticationModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Authentication\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabClientAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabClientModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabDeviceUtil.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabIdfa.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\CloudScript\PlayFabCloudScriptAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\CloudScript\PlayFabCloudScriptModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\CloudScript\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Data\PlayFabDataAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Data\PlayFabDataModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Data\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Entity\ScreenTimeTracker.cs" />
+    <Compile Include="Assets\PlayFabSdk\Events\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Events\PlayFabEventsAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Events\PlayFabEventsModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Groups\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Groups\PlayFabGroupsAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Groups\PlayFabGroupsModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Localization\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Localization\PlayFabLocalizationAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Localization\PlayFabLocalizationModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Matchmaker\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Matchmaker\PlayFabMatchmakerAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Matchmaker\PlayFabMatchmakerModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Profiles\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Profiles\PlayFabProfilesAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Profiles\PlayFabProfilesModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayFabServerAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayFabServerModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayStream\PlayFabPlayStreamAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\ISerializer.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\Log.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabErrors.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\IPlayFabHttp.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabHTTP.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabUnityHttp.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabWebRequest.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabWWW.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabSignalR\IPlayFabSignalR.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabSignalR\PlayFabSignalR.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\SimpleJson.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\SingletonMonoBehaviour.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\Util.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\wsaReflectionExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\CRC32.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\Deflate.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\DeflateStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\GZipStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\Inflate.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\InfTree.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\Zlib.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibCodec.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibConstants.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZTree.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Models\PlayFabSharedSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Models\SharedModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\IPlayFabPlugin.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\IPlayFabTransportPlugin.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\ISerializerPlugin.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\ITransportPlugin.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabDataGatherer.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabLogger.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayStream\PlayStreamEventDataModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginContract.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginManager.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Connection.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\ConnectionExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\DisposableAction.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\CallbackDetail.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\DefaultHttpClient.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\HttpHelper.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\HttpWebRequestWrapper.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\HttpWebResponseWrapper.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IHttpClient.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IHttpClientExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IRequest.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IResponse.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\RequestState.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubConnection.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubInvocation.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubMethodAttribute.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubProxy.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubRegistrationData.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubResult.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\Hubservable.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\IHubProxy.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\IObservable.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\IObserver.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\ProxyExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\Subscription.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\IConnection.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\ChunkBuffer.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\DisposableAction.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\StreamExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\StreamState.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\UriQueryUtility.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\NegotiationResponse.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\AsyncStreamReader.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\AutoTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\CancellationTokenSource.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\CustomEventArgs.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\EventSignal.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\HttpBasedTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\IClientTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\LongPollingTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\OptionalEventSignal.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\ServerSentEventsTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\SseEvent.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PlayFabLogin.cs" />
+    <None Include="Assets\PlayFabSdk\link.xml" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/projects/Games/New Unity Project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
